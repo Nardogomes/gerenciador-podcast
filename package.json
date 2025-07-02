@@ -1,0 +1,24 @@
+{
+  "name": "gerenciador-podcasts",
+  "version": "1.0.0",
+  "description": "Um app para centralizar diferentes episódios de podcasts separados por categoria.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start:dev": "tsx src/server.ts",
+    "start:watch": "tsx watch src/server.ts",
+    "dist": "tsup src",
+    "start:dist": "npm run dist && node server.js"
+  },
+  "keywords": [],
+  "author": "Ednardo Gomes",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
